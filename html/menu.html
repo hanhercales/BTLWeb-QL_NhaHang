@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thực đơn - Bếp nhỏ Indo</title>
-    <link rel="stylesheet" href="../css/header-footer.css">
+    <title>Menu-Bếp nhỏ Indo</title>
+    <link rel="stylesheet" href="../css/menu.css">
+    <!-- External JavaScript -->
+    <script src="../js/menu.js" defer></script> <!-- Load the JS file separately -->
 </head>
 <body>
     <header>
@@ -22,7 +24,7 @@
             </ul>
         </div>
         <div class="head-info">
-            <img src="">
+            <img src="../images/logo.png">
             <div>
                 <p><span>&#x1F551;</span> Open: 8.am - 10.pm</p>
                 <p><span>&#x1F4E7;</span> Email: bepnhoindo@gmail.com</p>
@@ -43,29 +45,187 @@
         </div>
     </header>
 
+    <!-- Main Content -->
     <main>
+        <h3>Danh sách tất cả món ăn</h3>
+        <section class="main-content">
+            <div class="product-section">
+                <!-- Category List -->
+                <aside class="category-list">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#">Toàn bộ</a></li>
+                        <li><a href="#">Mì trộn</a></li>
+                        <li><a href="#">Đồ ăn vặt</a></li>
+                        <li><a href="#">Nước uống</a></li>
+                        <li><a href="#">Các Combo</a></li>
+                    </ul>
+                </aside>
 
+                <!-- Product Grid with 18 products pre-populated -->
+                <div class="product-grid">
+                    <div class="product-card">
+                        <img src="../images/IMG_8462.PNG" alt="Mì trộn rau củ">
+                        <p>Giá: 25.000đ</p>
+                        <p>Mì trộn rau củ</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8114.PNG" alt="Mì trộn thâp cẩm">
+                        <p>Giá: 37.000đ</p>
+                        <p>Mì trộn thâp cẩm</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8460.PNG" alt="Mì trộn nem rán">
+                        <p>Giá: 36.000đ</p>
+                        <p>Mì trộn nem rán</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/./IMG_8476.JPG" alt="Mì trộn xúc xích">
+                        <p>Giá: 30.000đ</p>
+                        <p>Mì trộn xúc xích</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8454.PNG" alt="Mì trộn bò khô">
+                        <p>Giá: 29.000đ</p>
+                        <p>Mì trộm bò khô</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8458.PNG" alt="Mì trộn hồ lô">
+                        <p>Giá: 32.000đ</p>
+                        <p>Mì trộn hồ lô</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8459.PNG" alt="Mì trộn mực xoắn">
+                        <p>Giá: 33.000đ</p>
+                        <p>Mì trộn mực xoắn</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8463.PNG" alt="Mì trộn sủi cảo">
+                        <p>Giá: 31.000đ</p>
+                        <p>Mì trộn sủi cảo</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8464.PNG" alt="Mì trộn tôm surimi">
+                        <p>Giá: 34.000đ</p>
+                        <p>Mì trộn tôm surimi</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8405.JPG" alt="Khoai tây chiên">
+                        <p>Giá: 40.000đ</p>
+                        <p>Khoai tây chiên</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8404.JPG" alt="Khoai lang kén">
+                        <p>Giá: 35.000đ</p>
+                        <p>Khoai lang kén</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8401.JPG" alt="Bánh gà (2 cái)">
+                        <p>Giá: 20.000đ</p>
+                        <p>Bánh gà (2 cái)</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8403.JPG" alt="Gà popcorn chiên">
+                        <p>Giá: 52.000đ</p>
+                        <p>Gà popcorn</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8407.JPG" alt="Phô mai que(5 cái)">
+                        <p>Giá: 40.000đ</p>
+                        <p>Phô mai que(5 cái)</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8408.JPG" alt="Khoai môn lệ phố (3 viên)">
+                        <p>Giá: 20.000đ</p>
+                        <p>Khoai môn lệ phố (3 viên)</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8406.JPG" alt="Kimbap chiên">
+                        <p>Giá: 28.000đ</p>
+                        <p>Kimbap chiên</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8402.JPG" alt="Hot dog">
+                        <p>Giá: 24.000đ</p>
+                        <p>Hot dog</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8409.JPG" alt="Lạp xưởng rán">
+                        <p>Giá: 15.000đ</p>
+                        <p>Lạp xưởng rán</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8410.JPG" alt="Xúc xích rán">
+                        <p>Giá: 17.000đ</p>
+                        <p>Xúc xích rán</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8416.JPG" alt="Trà quất">
+                        <p>Giá: 15.000đ</p>
+                        <p>Trà quất</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8419.JPG" alt="Soda dâu">
+                        <p>Giá: 28.000đ</p>
+                        <p>Soda dâu</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8425.JPG" alt="Soda ổi hồng">
+                        <p>Giá: 30.000đ</p>
+                        <p>Soda ổi hồng</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8488.PNG" alt="Combo 1 kimbap + 2 hotdog + 2 bánh gà thường">
+                        <p>Giá: 90.000đ</p>
+                        <p>Combo 1 kimbap + 2 hotdog + 2 bánh gà thường</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8484.PNG" alt="Set đồ ăn vặt lớn">
+                        <p>Giá: 123.000đ</p>
+                        <p>Set đồ ăn vặt lớn</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8423.JPG" alt="Combo 1 kimbap + 5 nem chua rán + 1 trà quất">
+                        <p>Giá: 70.000đ</p>
+                        <p>Combo 1 kimbap + 5 nem chua rán + 1 trà quất</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="../images/IMG_8424.JPG" alt="Combo 1 kimbap + 5 nem vỏ giòn + 1 coca">
+                        <p>Giá: 80.000đ</p>
+                        <p>Combo 1 kimbap + 5 nem vỏ giòn + 1 coca</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Pagination Controls -->
+            <div class="pagination">
+                <button class="prev">Prev</button>
+                <span>Page 1 of X</span>
+                <button class="next">Next</button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-infor">
+                <ul>
+                    <p>Về chúng tôi</p>
+                    <li>Bếp nhỏ Indo - Hết lòng với từng món ăn</li>
+                    <li>Địa chỉ: Số XX, đường Y, phường Z, Đống Đa, Hà Nội</li>
+                </ul>
+                <ul>
+                    <p>Liên kết nhanh</p>
+                    <li><a href="../index.html">Trang chủ</a></li>
+                    <li><a href="../html/about-us.html">Giới thiệu</a></li>
+                    <li><a href="../html/menu.html">Thực đơn</a></li>
+                    <li><a href="../html/reserve.html">Đặt bàn</a></li>
+                    <li><a href="../html/contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2024 DPG Team.</p>
+            </div>
+        </footer>
     </main>
-
-    <footer>
-        <div class="footer-infor">
-            <ul>
-                <p>Về chúng tôi</p>
-                <li>Bếp nhỏ Indo - Hết lòng với từng món ăn</li>
-                <li>Địa chỉ: Số XX, đường Y, phường Z, Đống Đa, Hà Nội</li>
-            </ul>
-            <ul>
-                <p>Liên kết nhanh</p>
-                <li><a href="../index.html">Trang chủ</a></li>
-                <li><a href="../html/about-us.html">Giới thiệu</a></li>
-                <li><a href="../html/menu.html">Thực đơn</a></li>
-                <li><a href="../html/reserve.html">Đặt bàn</a></li>
-                <li><a href="../html/contact.html">Liên hệ</a></li>
-            </ul>
-        </div>
-        <div class="copyright">
-            <p>Copyright &copy; 2024 DPG Team.</p>
-        </div>
-    </footer>
 </body>
 </html>

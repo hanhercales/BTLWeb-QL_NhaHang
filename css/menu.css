@@ -173,7 +173,7 @@ main h3 {
     left: 0;
     top: 0;
     height: 400px;
-    background-image: url(chopsticks-with-spring-rolls-noodles-sauces-with-chopsticks-wooden-table.jpg); 
+    background-image: url(../images/chopsticks-with-spring-rolls-noodles-sauces-with-chopsticks-wooden-table.jpg); 
     background-size: cover; 
     background-position: center; 
     color: #ffffffff; 
@@ -217,7 +217,7 @@ main h3::after {
     color: black;
     border-bottom: 2px solid #333; 
     padding: 15px;
-    background: url(dots-paper-yellow-copy-space-background.jpg);
+    background: url(../images/dots-paper-yellow-copy-space-background.jpg);
 }
 
 .category-list ul {

@@ -1,0 +1,173 @@
+form {
+    margin-bottom: 5px;
+}
+
+.pick {
+    text-align: center;
+}
+
+table {
+    border: 1px solid rgba(234, 234, 234, 0.584);
+    width: 80vw;
+    margin-left: 10vw;
+    border-collapse: collapse;
+    height: 65vh;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#reservationTable {
+    visibility: hidden;
+    margin-bottom: 20px;
+}
+
+table th {
+    background-color: #DEB887;
+    color: white;
+    padding: 7.5px;
+}
+
+td {
+    text-align: center;
+}
+
+#resetButton {
+    visibility: hidden;
+}
+
+button {
+    text-align: center;
+    background-color: #DEB887;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 3px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-color: #D2B48C;
+}
+
+button:hover {
+    color: rgb(173, 138, 138);
+}
+
+#popupDialog {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+
+    button {
+        text-align: center;
+    }
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+#popupDialog2 {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+
+    button {
+        text-align: center;
+    }
+}
+
+#overlay2 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(117, 136, 197, 0.5);
+    z-index: 999;
+}
+
+.popupimg {
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+img {
+    height: 150px;
+}
+
+.text-bar {
+    margin-top: 10px;
+}
+
+.text-bar input {
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 224px;
+    font-size: 16px;
+}
+
+.note-bar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.note-bar input {
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 224px;
+    font-size: 16px;
+}
+
+textarea {
+    width: 224px;
+    height: 7.5vh;
+}
+
+.button {
+    margin-left: 30px;
+    margin-top: 10px;
+    display: inline;
+}
+
+.resetButton {
+    background-color: red;
+}
+
+.green {
+    color: #DEB887;
+}
+
+.size26 {
+    font-size: 26px;
+}
+
+@media screen and (max-width : 700px) {
+    .popupimg {
+        display: none;
+    }
+
+    #popupDialog {
+        text-align: center;
+    }
+}

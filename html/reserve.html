@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đặt bàn - Bếp nhỏ Indo</title>
     <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/reserve.css">
+    <script src="../js/reserve.js"></script>
 </head>
+
 <body>
     <header>
         <div class="head-bar">
             <div class="welcome-word">
                 <span>Chào mừng đến với Bếp nhỏ Indo!</span>
-                
+
             </div>
             <ul class="head-bar-menu">
                 <li><a href="../index.html">Trang chủ</a></li>
@@ -22,12 +26,13 @@
             </ul>
         </div>
         <div class="head-info">
-            <img src="">
+            <img src="../images/logo.png" alt="">
             <div>
                 <p><span>&#x1F551;</span> Open: 8.am - 10.pm</p>
                 <p><span>&#x1F4E7;</span> Email: bepnhoindo@gmail.com</p>
-                <p><span>&#x1F4DE;</span> Hotline: 0XXX XXX XXX</p></div>
+                <p><span>&#x1F4DE;</span> Hotline: 0XXX XXX XXX</p>
             </div>
+        </div>
         </div>
         <div class="nav-bar">
             <ul>
@@ -44,8 +49,151 @@
     </header>
 
     <main>
+        <section class="pick">
+            <h1 id="pick">Nhập ngày, giờ và số người</h1>
+            <form action="">
+                <input type="date" id="dateInput">
+                <input type="time" id="timeInput">
+                <input list="number" id="accommodationInput" placeholder="số khách" >
+                <datalist id="number">
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="4"></option>
+                    <option value="8"></option>
+                </datalist>
+            </form>
+            <button id="searchingButton">Tìm kiếm</button><br>
+            <button class="resetButton" id="resetButton">Đặt lại</button>
+        </section>
+        <section>
+            <table id="reservationTable">
+                <thead>
+                    <tr>
+                        <th>Bàn</th>
+                        <th>Thời Gian</th>
+                        <th>Ngày </th>
+                        <th>Số người</th>
+                        <th>Tình trạng</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tr>
+                    <td>1</td>
+                    <td class="time-cell"></td>
+                    <td class="date-cell"></td>
+                    <td class="accommodation-cell"></td>
+                    <td class="green">Còn bàn</td>
+                    <td><button onclick="popupFn()">Đặt bàn</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="time-cell">
+                    <td class="date-cell"></td>
+                    <td class="accommodation-cell"></td>
+                    <td class="green">Còn bàn</td>
+                    <td><button onclick="popupFn()">Đặt bàn</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="time-cell">
+                    <td class="date-cell"></td>
+                    <td class="accommodation-cell"></td>
+                    <td class="green">Còn bàn</td>
+                    <td><button onclick="popupFn()">Đặt bàn</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="time-cell">
+                    <td class="date-cell"></td>
+                    <td class="accommodation-cell"></td>
+                    <td class="green">Còn bàn</td>
+                    <td><button onclick="popupFn()"> Đặt bàn</button></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td class="time-cell">
+                    <td class="date-cell"></td>
+                    <td class="accommodation-cell"></td>
+                    <td class="green">Còn bàn</td>
+                    <td><button onclick="popupFn()"> Đặt bàn</button></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td class="time-cell">
+                    <td class="date-cell"></td>
+                    <td class="accommodation-cell"></td>
+                    <td class="green">Còn bàn</td>
+                    <td><button onclick="popupFn()"> Đặt bàn</button></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td class="time-cell">
+                    <td class="date-cell"></td>
+                    <td class="accommodation-cell"></td>
+                    <td class="green">Còn bàn</td>
+                    <td><button onclick="popupFn()"> Đặt bàn</button></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td class="time-cell">
+                    <td class="date-cell"></td>
+                    <td class="accommodation-cell"></td>
+                    <td class="green">Còn bàn</td>
+                    <td><button onclick="popupFn()"> Đặt bàn</button></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td class="time-cell">
+                    <td class="date-cell"></td>
+                    <td class="accommodation-cell"></td>
+                    <td class="green">Còn bàn</td>
+                    <td><button onclick="popupFn()"> Đặt bàn</button></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td class="time-cell">
+                    <td class="date-cell"></td>
+                    <td class="accommodation-cell"></td>
+                    <td class="green">Còn bàn</td>
+                    <td><button onclick="popupFn()"> Đặt bàn</button></td>
+                </tr>
+
+                <div id="overlay"></div>
+                <div id="popupDialog">
+                    <p class="size26">Chào mừng đến với Bếp nhỏ Indo</p>
+                    <form name="frmAccount">
+                        <div class="text-bar">
+                            <input type="text" id="ipname" placeholder="Họ tên khách hàng...">
+                        </div>
+                        <div class="text-bar">
+                            <input type="text" id="ipcontact" placeholder="Số điện thoại/E-mail...">
+                        </div>
+                        <div class="note-bar">
+                            <textarea name="" id="ipnote" placeholder=" Ghi chú... "></textarea>
+                        </div>
+                    </form>
+                    <div class="popupimg"><img src="../images/logo.png" alt=""></div>
+                    <div class="button"><button onclick="validform(frmAccount)">Đặt bàn</button></div>
+                    <div class="button"><button class="resetButton" onclick="closeFn()">Hủy</button></div>
+                </div>
+
+
+                <div id="overlay2"></div>
+                <div id="popupDialog2">
+                    <p class="size26">Bạn đã đặt bàn thành công</p>
+                    <div>
+                        <div id="opname">Tên khách hàng</div>
+                        <div id="opcontact">Liên hệ</div>
+                        <div id="opnote">Ghi chú</div>
+                    </div>
+                    <div class="button"><button class="resetButton" onclick="closeFn()">Hủy</button></div>
+                </div>
+            </table>
+        </section>
 
     </main>
+
 
     <footer>
         <div class="footer-infor">
@@ -67,5 +215,7 @@
             <p>Copyright &copy; 2024 DPG Team.</p>
         </div>
     </footer>
+
 </body>
+
 </html>

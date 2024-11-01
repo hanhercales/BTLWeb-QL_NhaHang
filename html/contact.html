@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liên hệ - Bếp nhỏ Indo</title>
+    <title>Liên hệ</title>
     <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/Contact.css">
+    <script src="../js/Contact.js"></script>
 </head>
+
 <body>
     <header>
         <div class="head-bar">
             <div class="welcome-word">
                 <span>Chào mừng đến với Bếp nhỏ Indo!</span>
-                
             </div>
             <ul class="head-bar-menu">
                 <li><a href="../index.html">Trang chủ</a></li>
@@ -22,11 +25,11 @@
             </ul>
         </div>
         <div class="head-info">
-            <img src="">
+            <img src="../images/logo.png" alt="img">
             <div>
-                <p><span>&#x1F551;</span> Open: 8.am - 10.pm</p>
-                <p><span>&#x1F4E7;</span> Email: bepnhoindo@gmail.com</p>
-                <p><span>&#x1F4DE;</span> Hotline: 0XXX XXX XXX</p></div>
+                <p><span>🕑</span> Open: 8.am - 10.pm</p>
+                <p><span>📧</span> Email: bepnhoindo@gmail.com</p>
+                <p><span>📞</span> Hotline: 0XXX XXX XXX</p>
             </div>
         </div>
         <div class="nav-bar">
@@ -44,7 +47,56 @@
     </header>
 
     <main>
+        <div class="head">
+            <span class="title">Liên hệ</span>
+        </div>
 
+        <div class="body">
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d931.1108176616548!2d105.80666676963422!3d21.014942498789434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab60f1b5b84d%3A0x21a851eb1173c049!2zMTI2IE5nLiAyNSBQLiBWxakgTmfhu41jIFBoYW4sIEzDoW5nIEjhuqEsIMSQ4buRbmcgxJBhLCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1730336792209!5m2!1svi!2s"
+                    width="80%" height="300px" style="border:0;" title="Bep nho Indo" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="container">
+                <div class="contact-form">
+                    <h3>Liên hệ với chúng tôi</h3>
+                    <form name="frmAccount" onsubmit="return validform(this)">
+                        <h4>Tên</h4>
+                        <input placeholder="Họ và tên" type="text" class="form-control form-control-lg" required
+                            name="contact[Name]">
+
+                        <h4>Email</h4>
+                        <input placeholder="Email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                            required id="email1" class="form-control form-control-lg" name="contact[email]">
+
+                        <h4>Nội dung</h4>
+                        <textarea placeholder="Nội dung" name="contact[body]" id="comment"
+                            class="form-control content-area form-control-lg" rows="5" required></textarea>
+
+                        <input onclick="validform(form)" class="btn btn-primary btn-lienhe" type="submit"
+                            value="Gửi liên hệ">
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="logo2">
+                        <img src="../images/logo-removebg-preview.png" alt="">
+                    </div>
+                    <p class="company-description">Thương hiệu Bếp nhỏ Indo là cửa hàng chuyên phục vụ các món mì xào
+                        thơm ngon, mang hương vị độc đáo và đậm đà. Được điều hành bởi công ty cổ phần MinhPhat, Bếp nhỏ
+                        Indo nhanh chóng trở thành lựa chọn hàng đầu của giới trẻ Việt Nam nhờ vào chất lượng vượt trội
+                        và không gian ẩm thực sáng tạo. Các món mì xào tại đây không chỉ hấp dẫn bởi hương vị truyền
+                        thống kết hợp với phong cách hiện đại, mà còn được chế biến từ nguyên liệu tươi ngon, đáp ứng
+                        mọi nhu cầu về ẩm thực của khách hàng.</p>
+                    <ul>
+                        <li>126 Ng. 25 P. Vũ Ngọc Phan, Láng Hạ, Đống Đa, Hà Nội, Việt Nam</li>
+                        <li><a href="mailto:Bepnhoindo@gmail.com">Bepnhoindo@gmail.com</a></li>
+                        <li><a href="tel:+84359833264">0359833264</a></li>
+                        <li><a href="https://zalo.me/[0359833264]" target="_blank">Ngô Thế Minh</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -64,8 +116,10 @@
             </ul>
         </div>
         <div class="copyright">
-            <p>Copyright &copy; 2024 DPG Team.</p>
+            <p>Copyright © 2024 DPG Team.</p>
         </div>
     </footer>
+
 </body>
+
 </html>

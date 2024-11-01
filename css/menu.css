@@ -184,7 +184,6 @@ main h3 {
     line-height: 400px; 
     margin: 0; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 main h3::after {

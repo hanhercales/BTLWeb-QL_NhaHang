@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     { name: "Soda dâu", category: "Nước uống", price: "28.000đ", image: "../images/IMG_8419.JPG" },
     { name: "Soda ổi hồng", category: "Nước uống", price: "30.000đ", image: "../images/IMG_8425.JPG" },
     { name: "Combo 1 kimbap + 2 hotdog + 2 bánh gà thường", category: "Các combo", price: "90.000đ", image: "../images/IMG_8488.PNG" },
-    { name: "Set đồ ăn vặt lớn", category: "Các combo", price: "123.000đ", image: "./IMG_8484.PNG" },
+    { name: "Set đồ ăn vặt lớn", category: "Các combo", price: "123.000đ", image: "../images/IMG_8484.PNG" },
     { name: "Combo 1 kimbap + 5 nem chua rán + 1 trà quất", category: "Các combo", price: "70.000đ", image: "../images/IMG_8423.JPG" },
     { name: "Combo 1 kimbap + 5 nem vỏ giòn + 1 coca", category: "Các combo", price: "80.000đ", image: "../images/IMG_8424.JPG" }
   ];
